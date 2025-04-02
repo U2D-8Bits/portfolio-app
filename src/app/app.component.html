@@ -1,5 +1,26 @@
-<h1>
-  PortFolio App
-</h1>
+<div class="min-h-screen flex flex-col">
 
-<router-outlet />
+  <!-- Header Fijo en la parte superior -->
+  <header class="sticky top-0 z-50 w-full">
+    <app-header-ui class="w-full"/>
+  </header>
+
+
+  <!-- Contenido Principal con Scroll -->
+  <main class="flex-grow pt-16">
+    <div class="container mx-auto px-4 py-8">
+      <app-home-section id="home" class="min-h-screen section"/>
+      <app-experience-section id="experience" class="min-h-screen section"/>
+      <app-projects-section id="projects" class="min-h-screen section"/>
+      <app-about-section id="about" class="min-h-screen section" />
+      <app-technologies-section id="technologies" class="min-h-screen section"/>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full">
+    <app-footer-ui/>
+  </footer>
+
+  <router-outlet />
+</div>

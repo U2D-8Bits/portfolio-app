@@ -1,2 +1,19 @@
 @import "tailwindcss";
 @import "tailwindcss-primeui";
+
+/* Transición suave al hacer scroll a las secciones */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para las secciones */
+.section {
+  scroll-margin-top: 4rem; /* Ajusta según la altura de tu header */
+  padding: 2rem 0;
+}
+
+/* Asegurar que las imágenes y otros elementos sean responsivos */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
