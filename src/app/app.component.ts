@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutSectionComponent, ExperienceSectionComponent, HomeSectionComponent, ProjectsSectionComponent, TechnologiesSectionComponent } from './presentation/components';
+import { FooterUiComponent, HeaderUiComponent } from './presentation/ui';
 
 
 @Component({
@@ -13,6 +14,9 @@ import { AboutSectionComponent, ExperienceSectionComponent, HomeSectionComponent
     ProjectsSectionComponent,
     AboutSectionComponent,
     TechnologiesSectionComponent,
+
+    HeaderUiComponent,
+    FooterUiComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
