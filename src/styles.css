@@ -2,6 +2,14 @@
 @import "tailwindcss-primeui";
 @import "primeicons/primeicons.css";
 
+
+@theme {
+  --color-orangie: #FF9501;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-gotham: 'Gotham', sans-serif;
+}
+
+
 /* Transición suave al hacer scroll a las secciones */
 html {
   scroll-behavior: smooth;
