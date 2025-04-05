@@ -5,7 +5,7 @@
 
 export interface ExperienceInterface {
 
-  id: string;
+  id?: string;
   company: string;
   position: string;
   startDate: Date;
