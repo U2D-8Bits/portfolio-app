@@ -24,11 +24,11 @@
         <!-- Fechas -->
         <div class="flex items-center">
           <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-            {{ experience.startDate }}
+            {{ experience.startDate | customDate }}
           </p>
           <span class="mx-2 text-gray-400">-</span>
           <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-            {{ experience.endDate }}
+            {{ experience.endDate | customDate }}
           </p>
         </div>
       </div>
@@ -59,11 +59,11 @@
       <!-- Fechas -->
       <div class="flex items-center mb-4">
         <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-          {{ experience.startDate }}
+          {{ experience.startDate | customDate }}
         </p>
         <span class="mx-2 text-gray-400">-</span>
         <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-          {{ experience.endDate }}
+          {{ experience.endDate | customDate }}
         </p>
       </div>
 
