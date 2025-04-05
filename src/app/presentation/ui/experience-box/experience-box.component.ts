@@ -6,14 +6,15 @@ import { DividerModule } from 'primeng/divider';
 
 //? Módulos / Interfaces personalizados
 import { ExperienceInterface } from '../../../core/domain/interfaces';
-
+import { CustomDatePipe } from '../../../application/pipes';
 
 
 @Component({
   selector: 'app-experience-box',
   imports: [
     DividerModule,
-    CommonModule
+    CommonModule,
+    CustomDatePipe
   ],
   templateUrl: './experience-box.component.html',
   styleUrl: './experience-box.component.css'
