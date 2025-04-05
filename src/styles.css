@@ -4,7 +4,11 @@
 
 
 @theme {
+  /* Colores */
   --color-orangie: #FF9501;
+  --color-gray-light: #D9D9D9;
+
+  /* Fuentes */
   --font-poppins: 'Poppins', sans-serif;
   --font-gotham: 'Gotham', sans-serif;
 }

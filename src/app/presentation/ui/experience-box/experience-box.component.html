@@ -1,0 +1,85 @@
+<!-- Cuerpo principal del Box -->
+<div *ngFor="let experience of experiences" class="mb-8 last:mb-0">
+
+  <!-- Contenedor principal - Cambia a columna en móvil/tablet y fila en desktop -->
+  <div class="flex flex-col md:flex-row gap-6">
+
+    <!-- Para móvil/tablet: Grupo icono + información -->
+    <div class="flex flex-row items-start md:hidden gap-4 w-full">
+      <!-- Icono de maletín -->
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-full flex-shrink-0 flex justify-center items-center w-14  h-14 md:h-20 p-3">
+        <i class="pi pi-briefcase text-2xl text-gray-300"></i>
+      </div>
+
+      <!-- Información de posición, compañía y fechas -->
+      <div class="flex-1">
+        <!-- Posición y compañía -->
+        <div class="mb-1">
+          <h3 class="text-xl font-bold text-orangie font-poppins">{{ experience.position }}</h3>
+          <p class="text-gray-700 dark:text-gray-300 font-semibold font-poppins">
+            {{ experience.company }}
+          </p>
+        </div>
+
+        <!-- Fechas -->
+        <div class="flex items-center">
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
+            {{ experience.startDate }}
+          </p>
+          <span class="mx-2 text-gray-400">-</span>
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
+            {{ experience.endDate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Para desktop: Sección izquierda (icono y línea vertical) -->
+    <div class="hidden md:flex flex-col items-center w-16 flex-shrink-0">
+      <!-- Icono de maletín -->
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-full flex justify-center items-center w-14 h-14 md:h-20 p-3 mb-2">
+        <i class="pi pi-briefcase text-2xl text-gray-300"></i>
+      </div>
+
+      <!-- Línea vertical decorativa -->
+      <div class="h-full w-0.5 bg-gray-200 dark:bg-gray-700 my-2"></div>
+    </div>
+
+    <!-- Para desktop: Sección derecha (contenido principal) -->
+    <div class="hidden md:block flex-1">
+      <!-- Posición y compañía -->
+      <div class="mb-2">
+        <h3 class="text-2xl font-bold text-orangie font-poppins inline">{{ experience.position }}</h3>
+        <span class="mx-2 text-gray-400">-</span>
+        <p class="text-gray-700 dark:text-gray-300 font-semibold font-poppins inline">
+          {{ experience.company }}
+        </p>
+      </div>
+
+      <!-- Fechas -->
+      <div class="flex items-center mb-4">
+        <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
+          {{ experience.startDate }}
+        </p>
+        <span class="mx-2 text-gray-400">-</span>
+        <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
+          {{ experience.endDate }}
+        </p>
+      </div>
+
+      <!-- Descripción -->
+      <div class="">
+        <p class="text-gray-700 dark:text-gray-300 font-poppins leading-relaxed">
+          {{ experience.description }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Descripción para móvil/tablet -->
+    <div class="md:hidden mt-4 pl-6 ml-5 border-l-2 border-gray-200 dark:border-gray-700">
+      <p class="text-gray-700 dark:text-gray-300 font-poppins leading-relaxed">
+        {{ experience.description }}
+      </p>
+    </div>
+  </div>
+</div>
