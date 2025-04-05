@@ -13,7 +13,7 @@ export class CustomDatePipe implements PipeTransform {
     const year: number = date.getFullYear();
 
     //? Formateamos la fecha en el formato deseado
-    const formatedDate: string = `${monthName} - ${year}`;
+    const formatedDate: string = `${monthName.toLocaleUpperCase()}  ${year}`;
 
     //? Retornamos la fecha formateada
     return formatedDate;
