@@ -4,3 +4,7 @@
 
 export { FooterUiComponent } from './footer-ui/footer-ui.component';
 export { HeaderUiComponent } from './header-ui/header-ui.component';
+
+
+export { ProjectBoxComponent } from './project-box/project-box.component';
+export { ExperienceBoxComponent } from './experience-box/experience-box.component';
