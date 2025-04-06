@@ -11,4 +11,5 @@ export interface ProjectInterface {
   url?: string;
   repository?: string;
   type: 'FullStack' | 'FrontEnd' | 'BackEnd';
+  bgColor: string;
 }
