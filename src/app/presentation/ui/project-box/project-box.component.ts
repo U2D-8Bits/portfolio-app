@@ -23,7 +23,7 @@ export class ProjectBoxComponent implements OnInit {
       repository: 'https://github.com/U2D-8Bits/diabControl-client',
       url: 'https://diabcontrol.netlify.app/auth/home',
       type: 'FullStack',
-      bgColor: "#3b82f6",
+      bgColor: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #bae6fd 100%)',
     },
     {
       name: 'Diseño de Portfolio Personal',
@@ -33,7 +33,7 @@ export class ProjectBoxComponent implements OnInit {
       repository: 'https://github.com/U2D-8Bits/portfolio-app',
       url: '',
       type: 'FrontEnd',
-      bgColor: "#10b981",
+      bgColor: 'linear-gradient(135deg, #747b8a 0%, #7e22ce 50%, #111621 100%)',
     },
     {
       name: 'ClassBuddy',
@@ -43,7 +43,7 @@ export class ProjectBoxComponent implements OnInit {
       repository: 'https://github.com/Homero22/ClassBuddy',
       url: '',
       type: 'FullStack',
-      bgColor: "#10b981",
+      bgColor: 'linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #f97316 100%)',
     },
     {
       name: 'App AeroBox',
@@ -53,7 +53,7 @@ export class ProjectBoxComponent implements OnInit {
       repository: 'https://github.com/U2D-8Bits/nextjs-dashboard-app',
       url: 'https://app-aerobox.vercel.app/login',
       type: 'FrontEnd',
-      bgColor: "#10b981",
+      bgColor: 'linear-gradient(135deg, #00d4ff 0%, #1ebee6 50%, #be18a2 100%)',
     },
 
   ]
