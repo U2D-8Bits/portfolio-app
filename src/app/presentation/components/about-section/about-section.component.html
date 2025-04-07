@@ -1,1 +1,64 @@
-<p>about-section works!</p>
+<!-- Contenedor principal de la sección About Me -->
+<section class="container mx-auto px-4 py-12 md:py-20 lg:py-24">
+
+  <!-- Titulo de la Sección -->
+  <div class="w-full md:w-1/2">
+    <div class="mb-6">
+      <h3 class="text-3xl sm:text-5xl md:text-4xl font-bold font-poppins leading-tight">
+        Sobre <span class="font-bold text-orangie">Mí</span>
+      </h3>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 xl:gap-20 items-center">
+
+    <!-- Foto de perfil - Orden cambia en desktop -->
+    <div class="order-1 flex justify-center lg:justify-center lg:w-2/5">
+      <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-full lg:max-w-md flex items-center justify-center">
+        <!-- Imagen con centrado perfecto -->
+        <div class="w-full h-full flex items-center justify-center overflow-hidden">
+          <img
+            [src]="aboutMeImg.src"
+            [alt]="aboutMeImg.alt"
+            class="w-auto h-full max-w-full max-h-full object-contain p-2"
+            aria-label="Imagen de perfil de Pablo Bolaños">
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido de texto -->
+    <div class="order-2 lg:w-3/5 flex flex-col gap-6">
+
+      <!-- Descripción Personal -->
+      <div class="space-y-4 text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+        <p>
+          Hola 👋, soy Pablo Bolaños, <span class="font-bold text-orangie">Ingeniero de Software y Desarrollador FullStack</span>. Inicié en la programación como un hobby hace poco más de 4 años. Hoy en día me encuentro aprendiendo más que nunca para mejorar mis habilidades y conocimientos.
+        </p>
+
+        <p>
+          Entre mis logros destaco el <span class="font-bold text-orangie">desarrollo y despliegue de una aplicación web de Telemedicina Asincrónica para el seguimiento y control de pacientes diabéticos</span>. Aplicación web la cual fue mi tesis para mi universidad, en la cual implementé un sistema de notificaciones y recordatorios para mejorar la adherencia al tratamiento, lo que resultó en un <span class="font-bold text-orangie">aumento del 20% en la participación de los pacientes</span>.
+        </p>
+
+        <p>
+          Me apasiona aprender nuevas tecnologías y mejorar mis habilidades. Siempre estoy buscando nuevos retos y oportunidades para crecer como desarrollador. Me gusta trabajar en equipo y colaborar con otros para lograr objetivos comunes.
+        </p>
+
+        <p>
+          Por último comparto mi hoja de vida actualizada, donde de manera más detallada especifico mi experiencia laboral, logros y formación académica.
+        </p>
+      </div>
+
+      <!-- Botón para descargar CV -->
+      <div class="mt-6 flex justify-center">
+        <button
+          (click)="downloadCV()"
+          class="bg-orangie hover:bg-orangie-dark text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-3 group"
+          aria-label="Descargar currículum vitae">
+          <i class="pi pi-file-pdf text-xl group-hover:scale-110 transition-transform" style="font-size: 1.5rem;"></i>
+          <span>Descargar CV</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
