@@ -2,17 +2,19 @@
 <section class="container mx-auto px-4 py-12 md:py-20 lg:py-24">
 
   <!-- Titulo de la Sección -->
-  <div class="mb-12 md:mb-16 lg:mb-20">
-    <h3 class="text-4xl sm:text-5xl md:text-6xl font-bold font-poppins leading-tight">
-      Sobre <span class="text-orangie">mí</span>
-    </h3>
+  <div class="w-full md:w-1/2">
+    <div class="mb-6">
+      <h3 class="text-3xl sm:text-5xl md:text-4xl font-bold font-poppins leading-tight">
+        Sobre <span class="font-bold text-orangie">Mí</span>
+      </h3>
+    </div>
   </div>
 
   <!-- Contenido principal -->
   <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 xl:gap-20 items-center">
 
     <!-- Foto de perfil - Orden cambia en desktop -->
-    <div class="order-2 lg:order-1 flex justify-center lg:justify-center lg:w-2/5">
+    <div class="order-1 flex justify-center lg:justify-center lg:w-2/5">
       <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-full lg:max-w-md flex items-center justify-center">
         <!-- Imagen con centrado perfecto -->
         <div class="w-full h-full flex items-center justify-center overflow-hidden">
@@ -26,7 +28,7 @@
     </div>
 
     <!-- Contenido de texto -->
-    <div class="order-1 lg:order-2 lg:w-3/5 flex flex-col gap-6">
+    <div class="order-2 lg:w-3/5 flex flex-col gap-6">
 
       <!-- Descripción Personal -->
       <div class="space-y-4 text-gray-700 dark:text-gray-300 text-base md:text-lg leading-relaxed">
@@ -35,7 +37,7 @@
         </p>
 
         <p>
-          Entre mis logros destaco el desarrollo y despliegue de una aplicación web de Telemedicina Asincrónica para el seguimiento y control de pacientes diabéticos. Aplicación web la cual fue mi tesis para mi universidad, en la cual implementé un sistema de notificaciones y recordatorios para mejorar la adherencia al tratamiento, lo que resultó en un aumento del 20% en la participación de los pacientes.
+          Entre mis logros destaco el <span class="font-bold text-orangie">desarrollo y despliegue de una aplicación web de Telemedicina Asincrónica para el seguimiento y control de pacientes diabéticos</span>. Aplicación web la cual fue mi tesis para mi universidad, en la cual implementé un sistema de notificaciones y recordatorios para mejorar la adherencia al tratamiento, lo que resultó en un <span class="font-bold text-orangie">aumento del 20% en la participación de los pacientes</span>.
         </p>
 
         <p>
@@ -48,12 +50,12 @@
       </div>
 
       <!-- Botón para descargar CV -->
-      <div class="mt-6 flex justify-center lg:justify-start">
+      <div class="mt-6 flex justify-center">
         <button
           (click)="downloadCV()"
           class="bg-orangie hover:bg-orangie-dark text-white px-8 py-3 rounded-full font-medium transition-colors flex items-center gap-3 group"
           aria-label="Descargar currículum vitae">
-          <i class="pi pi-file-pdf text-xl group-hover:scale-110 transition-transform"></i>
+          <i class="pi pi-file-pdf text-xl group-hover:scale-110 transition-transform" style="font-size: 1.5rem;"></i>
           <span>Descargar CV</span>
         </button>
       </div>
