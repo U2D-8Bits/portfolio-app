@@ -13,3 +13,4 @@ export type { ProjectInterface } from './project.interface';
 
 //? Interfaz de las tecnologías
 export type { TechnologiesInterface } from './technologies.interface';
+export type { TechnologyCategory } from './technologies.interface';
