@@ -1,1 +1,23 @@
-<p>technologies-box works!</p>
+<div class="container mx-auto px-4 py-8">
+
+  <!-- Grid de categorías -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+    <!-- Card de Tecnologias -->
+    <div *ngFor="let category of categories"
+      class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white border-b-2 border-orangie pb-2">
+        {{ category.name}}
+      </h3>
+
+      <!-- Contenido de las categorias -->
+      <div *ngFor="let tech of category.technologies" class="flex flex-col items-center">
+        <div class="w-12 h-12 flex items-center justify-center mb-2" [innerHTML]="getSafeSvg(tech.svgUrl)"></div>
+        <span class="text-xs sm:text-sm text-center font-medium text-gray-600">
+          {{ tech.alt }}
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>
