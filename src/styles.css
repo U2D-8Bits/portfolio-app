@@ -5,8 +5,9 @@
 
 @theme {
   /* Colores */
-  --color-orangie: #FF9501;
+  --color-orangie:    #FF9501;
   --color-gray-light: #D9D9D9;
+  --color-bluetie: #0F8FDE;
 
   /* Fuentes */
   --font-poppins: 'Poppins', sans-serif;
