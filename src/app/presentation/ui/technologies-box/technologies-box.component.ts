@@ -32,18 +32,22 @@ export class TechnologiesBoxComponent implements OnInit {
   categories = [
     {
       name: 'Frontend',
+      textColor: 'text-[#0F8FDE]',
       technologies: this.frontendTechnologies,
     },
     {
       name: 'Backend',
+      textColor: 'text-[#3F4B5E]',
       technologies: this.backendTechnologies,
     },
     {
       name: 'Learning',
+      textColor: 'text-[#DE7D0F]',
       technologies: this.learningTechnologies,
     },
     {
       name: 'Tools',
+      textColor: 'text-[#088708]',
       technologies: this.toolTechnologies,
     },
   ];
