@@ -1,11 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TechnologiesBoxComponent } from '../../ui';
 
 @Component({
   selector: 'app-technologies-section',
-  imports: [],
+  imports: [
+    CommonModule,
+    TechnologiesBoxComponent
+],
   templateUrl: './technologies-section.component.html',
   styleUrl: './technologies-section.component.css'
 })
-export class TechnologiesSectionComponent {
+export class TechnologiesSectionComponent implements OnInit {
+
+  //? Constructor
+  constructor(
+  ) { }
+
+  //? Ciclo de vida
+  ngOnInit(): void {}
+
 
 }
