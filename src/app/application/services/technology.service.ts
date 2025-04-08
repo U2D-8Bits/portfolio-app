@@ -6,7 +6,7 @@ import { TechnologiesInterface, TechnologyCategory } from '../../core/domain/int
   providedIn: 'root'
 })
 
-export class NameService {
+export class TechnologyService {
 
   //* Variables
   private allTechnologies: TechnologiesInterface[] = [
