@@ -1,25 +1,23 @@
-<div class="min-h-screen flex flex-col">
-
-  <!-- Header Fijo en la parte superior -->
-  <header class="sticky top-0 z-50 w-full">
-    <app-header-ui class="w-full"/>
+<div class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+  <!-- Header Fijo -->
+  <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700">
+    <app-header-ui class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"/>
   </header>
 
-
-  <!-- Contenido Principal con Scroll -->
+  <!-- Contenido Principal -->
   <main class="flex-grow pt-16">
-    <div class="container mx-auto px-4 py-8">
-      <app-home-section id="home" class="min-h-screen section"/>
-      <app-experience-section id="experience" class="min-h-screen section"/>
-      <app-projects-section id="projects" class="min-h-screen section"/>
-      <app-about-section id="about" class="min-h-screen section" />
-      <app-technologies-section id="technologies" class="min-h-screen section"/>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <app-home-section id="home" class="min-h-[calc(100vh-4rem)] section scroll-mt-16"/>
+      <app-experience-section id="experience" class="min-h-[calc(100vh-4rem)] section scroll-mt-16"/>
+      <app-projects-section id="projects" class="min-h-[calc(100vh-4rem)] section scroll-mt-16"/>
+      <app-about-section id="about" class="min-h-[calc(100vh-4rem)] section scroll-mt-16"/>
+      <app-technologies-section id="technologies" class="min-h-[calc(100vh-4rem)] section scroll-mt-16"/>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="w-full">
-    <app-footer-ui/>
+  <footer class="w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <app-footer-ui class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"/>
   </footer>
 
   <router-outlet />
