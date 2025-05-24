@@ -6,6 +6,18 @@ import { ProjectInterface } from '../../../core/domain/interfaces';
 })
 export class ProjectsService {
   private projects: ProjectInterface[] = [
+        {
+      name: 'CoreD3v App',
+      description:
+        'Plataforma web diseñada para el equipo de desarrollo de CoreD3v que permite a los usuarios conocer acerca de la empresa, sus proyectos y servicios, así como también la oportunidad de conocer a los miembros del equipo.',
+      technologies: ['NextJs', 'TypeScript'],
+      image: 'assets/images/projects/cored3v-app.png',
+      repository: 'https://github.com/SoyKeevinn/CoreD3v',
+      url: '',
+      type: 'FrontEnd',
+      bgColor: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #bae6fd 100%)',
+      isPrivate: false,
+    },
     {
       name: 'DiabControl App',
       description:
@@ -16,6 +28,7 @@ export class ProjectsService {
       url: 'https://diabcontrol.netlify.app/auth/home',
       type: 'FullStack',
       bgColor: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #bae6fd 100%)',
+      isPrivate: true,
     },
     {
       name: 'Diseño de Portfolio Personal',
@@ -24,9 +37,10 @@ export class ProjectsService {
       technologies: ['Angular', 'TypeScript'],
       image: 'assets/images/projects/portfolio-app.png',
       repository: 'https://github.com/U2D-8Bits/portfolio-app',
-      url: '',
+      url: 'https://u2dev.vercel.app/',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #747b8a 0%, #7e22ce 50%, #111621 100%)',
+      isPrivate: false,
     },
     {
       name: 'ClassBuddy',
@@ -38,6 +52,7 @@ export class ProjectsService {
       url: '',
       type: 'FullStack',
       bgColor: 'linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #f97316 100%)',
+      isPrivate: true,
     },
     {
       name: 'App AeroBox',
@@ -49,6 +64,7 @@ export class ProjectsService {
       url: 'https://app-aerobox.vercel.app/login',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #00d4ff 0%, #1ebee6 50%, #be18a2 100%)',
+      isPrivate: false,
     },
   ];
 
