@@ -16,7 +16,7 @@ export class ProjectsService {
       url: '',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #bae6fd 100%)',
-      isPrivate: false,
+      isPrivate: true,
     },
     {
       name: 'DiabControl App',
@@ -28,7 +28,7 @@ export class ProjectsService {
       url: 'https://diabcontrol.netlify.app/auth/home',
       type: 'FullStack',
       bgColor: 'linear-gradient(135deg, #0369a1 0%, #0ea5e9 50%, #bae6fd 100%)',
-      isPrivate: true,
+      isPrivate: false,
     },
     {
       name: 'Diseño de Portfolio Personal',
@@ -40,7 +40,7 @@ export class ProjectsService {
       url: 'https://u2dev.vercel.app/',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #747b8a 0%, #7e22ce 50%, #111621 100%)',
-      isPrivate: true,
+      isPrivate: false,
     },
     {
       name: 'ClassBuddy',
@@ -52,7 +52,7 @@ export class ProjectsService {
       url: '',
       type: 'FullStack',
       bgColor: 'linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #f97316 100%)',
-      isPrivate: false,
+      isPrivate: true,
     },
     {
       name: 'App AeroBox',
@@ -64,7 +64,7 @@ export class ProjectsService {
       url: 'https://app-aerobox.vercel.app/login',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #00d4ff 0%, #1ebee6 50%, #be18a2 100%)',
-      isPrivate: false,
+      isPrivate: true,
     },
   ];
 
