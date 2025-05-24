@@ -12,4 +12,5 @@ export interface ProjectInterface {
   repository?: string;
   type: 'FullStack' | 'FrontEnd' | 'BackEnd';
   bgColor: string;
+  isPrivate: boolean;
 }
