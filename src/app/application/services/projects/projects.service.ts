@@ -40,7 +40,7 @@ export class ProjectsService {
       url: 'https://u2dev.vercel.app/',
       type: 'FrontEnd',
       bgColor: 'linear-gradient(135deg, #747b8a 0%, #7e22ce 50%, #111621 100%)',
-      isPrivate: false,
+      isPrivate: true,
     },
     {
       name: 'ClassBuddy',
@@ -52,7 +52,7 @@ export class ProjectsService {
       url: '',
       type: 'FullStack',
       bgColor: 'linear-gradient(135deg, #9a3412 0%, #ea580c 50%, #f97316 100%)',
-      isPrivate: true,
+      isPrivate: false,
     },
     {
       name: 'App AeroBox',
