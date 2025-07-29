@@ -9,7 +9,7 @@ export interface ExperienceInterface {
   company: string;
   position: string;
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
   description: string;
   logoUrl?: string;
 }

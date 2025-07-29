@@ -28,7 +28,7 @@
           </p>
           <span class="mx-2 text-gray-400">-</span>
           <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-            {{ experience.endDate | customDate }}
+            {{ experience.endDate ? (experience.endDate | customDate) : 'Actualidad' }}
           </p>
         </div>
       </div>
@@ -63,7 +63,7 @@
         </p>
         <span class="mx-2 text-gray-400">-</span>
         <p class="text-sm text-gray-600 dark:text-gray-400 font-medium font-poppins">
-          {{ experience.endDate | customDate }}
+          {{ experience.endDate ? (experience.endDate | customDate) : 'Actualidad' }}
         </p>
       </div>
 
