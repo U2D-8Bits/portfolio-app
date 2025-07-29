@@ -7,6 +7,12 @@ import { ExperienceInterface } from '../../../core/domain/interfaces';
 export class ExperienceService {
   private experiences: ExperienceInterface[] = [
     {
+        company: 'TATA Consultancy Services - TCS',
+        position: 'Analista IT / Desarrollador Full Stack',
+        startDate: new Date('2025-06-23'),
+        description: 'Actualmente me desempeño como Analista IT en TCS (Tata Consultancy Services), formando parte de un proyecto estratégico para Produbanco. Mi rol como desarrollador fullstack implica el diseño y desarrollo de soluciones tanto en backend como frontend utilizando C#, JavaScript y .NET, aplicadas a entornos críticos y de alto rendimiento. Además, participo activamente en la evolución de plataformas digitales orientadas a usuarios PYMES, colaborando con equipos multidisciplinarios bajo metodologías ágiles, asegurando entregas continuas, seguras y alineadas a los objetivos del negocio financiero.'
+    },
+    {
         company: 'Security Doctors',
         position: 'Desarrollador Frontend',
         startDate: new Date('2025-03-09'),
